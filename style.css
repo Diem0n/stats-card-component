@@ -1,0 +1,127 @@
+/*  Importing  the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+    background-color: hsl(233 , 23% , 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   color : rgb(170, 92, 219)
+}
+.container{
+    height: 90vh;
+    width: 80vw;
+    background-color: hsl(244 , 38% , 16%);
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.left{
+    background:linear-gradient(rgba(92, 24, 134, 0.692) ,rgba(91, 34, 126, 0.473)) , url('./images/image-header-mobile.jpg');
+    background-size: cover;
+    height: 30%;
+    
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+
+    
+    
+}
+.heading_primary{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1.2rem;
+}
+.purple{
+    color: rgb(170, 92, 219);
+}
+.about{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 0 1.2rem;
+    text-align: center;
+    line-height: 2;
+    font-size: .9rem;
+    margin-top: -0.8rem;
+}
+
+.stats{
+    padding: 1.2rem;
+    
+}
+ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1.2rem;
+    
+}
+ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.subtext{
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: .1rem;
+    margin-top: .4rem;
+}
+
+@media screen and (min-width:980px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    .left{
+        width: 50vw;
+        height: 100%;
+        background: linear-gradient(rgba(92, 24, 134, 0.692) ,rgba(91, 34, 126, 0.473)), url('./images/image-header-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .right{
+        padding: 4rem;
+    }
+    .heading_primary{
+        font-size: 2.6rem;
+    }
+    p{
+        width: 44ch;
+    }
+    ul{
+        flex-direction: row;
+    }
+}
+
